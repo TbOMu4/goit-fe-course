@@ -24,6 +24,7 @@ body {
 }
 
 .site-navigation {
+    text-align: center;
     margin: 0;
     padding: 0;
     font-size: 12px;
@@ -31,26 +32,16 @@ body {
     line-height: 191px;
 }
 
+.nav {
+    padding: 0 45px;
+}
+
 .site-navigation li {
     display: inline-block;
 }
 
-.lifestyle {
-    margin-right: 120px;
-    margin-left: 164px;
+.site-navigation li:hover {
     color: blue;
-}
-
-.photodiary {
-    margin-right: 104px;
-}
-
-.music {
-    margin-right: 95px;
-}
-
-.travel {
-    margin-right: 164px;
 }
 
 .features-list {
