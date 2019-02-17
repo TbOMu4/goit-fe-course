@@ -251,10 +251,11 @@ html {
 }
 
 .footer {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     margin-top: 81px;
     height: 65px;
-}
+ }
 
 .text-footer {
     font-family: Montserrat;
