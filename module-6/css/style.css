@@ -8,6 +8,11 @@ html {
     box-sizing: inherit;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -22,7 +27,7 @@ html {
 }
 
 .logo {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     color: #95ffd3;
 	font-size: 30px;
 	font-weight: bold;
@@ -35,7 +40,7 @@ html {
 
 .nav-item {
     position: relative;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
     color: rgb(149, 255, 211);
@@ -81,7 +86,7 @@ html {
     justify-content: center;
     text-align: center;
     margin-top: 22px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -90,7 +95,7 @@ html {
 
 
 .text-title {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
     color: #333;
@@ -98,7 +103,7 @@ html {
 
 .text-p {
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 	font-size: 15px;
     color: #999;
     margin-top: 32px;
@@ -135,7 +140,7 @@ html {
 }
 
 .text-title-2 {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -146,7 +151,7 @@ html {
 
 .text-p-t {
     margin: 115px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 	font-size: 15px;
     color: #999;
     margin-top: 32px;
@@ -157,7 +162,7 @@ html {
     text-align: center;
     margin: 0 auto;
     margin-top: 30px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
 	color: #333;
@@ -167,7 +172,7 @@ html {
     text-align: center;
     margin: 0 auto;
     margin-top: 15px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	font-style: italic;
 	color: #999;
@@ -189,18 +194,18 @@ html {
     margin: 0;
     padding: 0;
     width: 380px;
-	height: 470px;
-	background-color: #95e1d3;
-	-webkit-box-shadow: 0 0 7px rgba(255,255,255,.35);
-	-moz-box-shadow: 0 0 7px rgba(255,255,255,.35);
-	box-shadow: 0 0 7px rgba(255,255,255,.35);
-	background-image: -webkit-linear-gradient(bottom, rgba(252,227,138,.9), rgba(243,129,129,.9));
-	background-image: -moz-linear-gradient(bottom, rgba(252,227,138,.9), rgba(243,129,129,.9));
-	background-image: -o-linear-gradient(bottom, rgba(252,227,138,.9), rgba(243,129,129,.9));
-	background-image: -ms-linear-gradient(bottom, rgba(252,227,138,.9), rgba(243,129,129,.9));
-    background-image: linear-gradient(to top, rgba(252,227,138,.9), rgba(243,129,129,.9));
+    height: 470px;
+    -webkit-box-shadow: 0 0 7px rgba(255,255,255,.35);
+    -moz-box-shadow: 0 0 7px rgba(255,255,255,.35);
+    box-shadow: 0 0 7px rgba(255,255,255,.35);
+    background-image: -webkit-linear-gradient(bottom, rgba(252,227,138,.9), rgba(243,129,129,.9));
+    background-image: -moz-linear-gradient(bottom, rgba(252,227,138,.9), rgba(243,129,129,.9));
+    background-image: -o-linear-gradient(bottom, rgba(252,227,138,.9), rgba(243,129,129,.9));
+    background-image: -ms-linear-gradient(bottom, rgba(252,227,138,.9), rgba(243,129,129,.9));
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.76), rgba(243, 129, 129, 0.73));
     opacity: 0;
 }
+    
 
 .overlay-icon {
     position: absolute;
@@ -231,7 +236,11 @@ html {
 }
 
 .card:hover .overlay {
+    visibility: visible;
+    visibility: hidden 0.7;
     opacity: 0.7;
+    transform: translate(-10px, -10px);
+    
 }
 
 .icon-facebook {
@@ -258,7 +267,7 @@ html {
  }
 
 .text-footer {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #333
 }
@@ -267,21 +276,25 @@ html {
     color: #f38181;
 }
 
-.email { 
-    font-family: Roboto;
+.email {
+    padding: 40px;
+}
+
+input { 
+    font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	font-style: italic;
     color: #ccc;
-    width: 230px;
-	height: 40px;
+    min-width: 230px;
+    min-height: 40px;
 	background-color: #fff;
-	border: 1px solid;
+    border: 1px solid;
 }
 
 
 
 .button {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
