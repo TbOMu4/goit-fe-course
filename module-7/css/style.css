@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+  }
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15px;
+    margin-top: 50px;
+    margin-bottom: 125px;
+}
+
+.logo {
+    font-family: 'WisdomScriptAJ';
+	font-size: 26px;
+    color: rgb(254, 209, 54);
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family:'Montserrat', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+    color: #5d5d5d;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 60px;
+}
+
+.menu a:hover {
+    color: rgb(254, 212, 67);
+}
+
+h1 {
+    font-family: Montserrat;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #222;
+}
+
+p { 
+	font-size: 16px;
+	font-style: italic;
+	color: #777;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 22px;
+}
+
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    display: flex;
+    line-height: 66px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    width: 66px;
+	height: 66px;
+	-webkit-border-radius: 33px;
+	-moz-border-radius: 33px;
+	border-radius: 33px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: solid 3px #fed136;
+    line-height: 40px;
+}
+
+.features-list-item {
+    display: block;
+    text-align: center;
+}
+
+.text-h1 {
+    margin-bottom: 24px;
+}
+
+
+
+
+

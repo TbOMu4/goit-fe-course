@@ -23,7 +23,6 @@ html {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    
 }
 
 .logo {
@@ -203,7 +202,6 @@ html {
     background-image: -o-linear-gradient(bottom, rgba(252,227,138,.9), rgba(243,129,129,.9));
     background-image: -ms-linear-gradient(bottom, rgba(252,227,138,.9), rgba(243,129,129,.9));
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.76), rgba(243, 129, 129, 0.73));
-    opacity: 0;
 }
     
 
@@ -237,11 +235,9 @@ html {
 
 .card:hover .overlay {
     visibility: visible;
-    visibility: hidden 0.7;
-    opacity: 0.7;
-    transform: translate(-10px, -10px);
-    
+    transform: translate(-10px, -10px);   
 }
+
 
 .icon-facebook {
     background-image: url(../img/facebook.png);
