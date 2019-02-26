@@ -155,7 +155,7 @@ p {
 }
 
 .form-input {
-    display: block
+    display: block;
     width: 455px;
     height: 50px;
     margin-bottom: 30px;
@@ -172,6 +172,7 @@ p {
 }
 
 .form-textarea {
+    float: right;
     width: 455px;
 	height: 209px;
 	-webkit-border-radius: 2px/8px 8px 9px 9px;
