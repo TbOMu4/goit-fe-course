@@ -104,7 +104,6 @@ p {
 	border-radius: 33px;
     background-color: #fff;
     border-radius: 50%;
-    border: solid 3px #fed136;
     line-height: 40px;
 }
 
@@ -150,7 +149,6 @@ p {
 
 .form {
     max-width: 940px;
-    max-height: 265px;
     margin: 0 auto;
 }
 
@@ -172,7 +170,7 @@ p {
 }
 
 .form-textarea {
-    float: right;
+    display: block;
     width: 455px;
 	height: 209px;
 	-webkit-border-radius: 2px/8px 8px 9px 9px;
@@ -184,22 +182,22 @@ p {
     resize: none;
 }
 
+
+.button-submit {
+    text-align: center;
+    margin: 0 auto;
+}
+
 .submit {
+    margin-top: 30px;
+    margin-right: 350px;
+    margin-left: 350px;
     width: 240px;
 	height: 65px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	background-color: #fed136;
-}
-
-.form-action {
-    justify-content: center;
-    text-align: center;
-}
-
-.submit {
-    justify-content: center;
     font-family: Montserrat;
 	font-size: 18px;
 	font-weight: bold;
@@ -208,3 +206,25 @@ p {
 }
 
 
+.elemRight {
+    float: left;
+    margin-left: 30px;
+    margin-top: 77px;
+}
+
+.elemLeft {
+    margin-top: 77px;
+    float: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea[type="text"]:valid {
+    background: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea[type="text"]:invalid {
+    background: red;
+}

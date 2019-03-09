@@ -1,0 +1,7 @@
+@media (min-width: 748px) {
+    .container {
+        width: 748px;
+        background-image: url(/img/Vector\ Smart\ Object.png);
+        background-repeat: no-repeat;
+    }
+}
