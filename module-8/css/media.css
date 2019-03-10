@@ -1,7 +1,64 @@
 @media (min-width: 748px) {
     .container {
         width: 748px;
-        background-image: url(/img/Vector\ Smart\ Object.png);
-        background-repeat: no-repeat;
+        margin: 0 auto;
     }
+
+    .picture img {
+        background-color: #1a1915;
+    }
+
+    .header-login-log {
+        left: 556px;
+        top: 50px;
+    }
+
+    .header-login-sing {
+        right: 55px;
+        top: 50px;
+    }
+
+    .header-text-1 {
+        right: 533px;
+        top: 46px;
+    }
+
+    .header-text-2 {
+        top: 226px;
+        right: 203px;
+        left: 203px;
+    }
+
+    .header-text-p {
+        top: 372px;
+        right: 172px;
+        left: 172px;
+    }
+
+    .header-button {
+        width: 226px;
+        top: 424px;
+        right: 256px;
+        left: 256px;
+    }
+
+    .text-3 {
+        top: 71px;
+        margin-bottom: 34px;
+    }
+
+    .features-list {
+        display: block;
+        position: relative;
+
+    }
+
+    .features-list-item {   
+        width: 236px; 
+    }
+
+    .bradley-img-1 {
+        left: 190px;
+    }
+
 }

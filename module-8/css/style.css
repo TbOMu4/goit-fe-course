@@ -39,6 +39,8 @@ img {
     height: auto;
 }
 
+
+
 .header {
     position: relative;
     margin-bottom: 68px;
@@ -117,7 +119,7 @@ img {
 	color: #fff;
 }
 
-.content {
+.features-list {
     display: block;
     text-align: center;
 }
