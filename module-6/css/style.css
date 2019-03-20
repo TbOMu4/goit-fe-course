@@ -188,7 +188,7 @@ html {
     position: relative;
 }
 
-.overlay {
+.overlay:hover {
     position: absolute;
     margin: 0;
     padding: 0;

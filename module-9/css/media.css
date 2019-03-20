@@ -136,9 +136,15 @@
   }
 
   .header-button-2 {
-    left: 355px;
-   
+    left: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  
+  .button {
+    width: 190px;
+    margin: 0 auto;
+    margin-bottom: 74px;
+  }
 }
