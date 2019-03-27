@@ -1,0 +1,265 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.navigation {
+  float: right;
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 245px;
+}
+.page-nav {
+  padding: 38px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.name {
+  color: #605e5e;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+  float: left;
+  margin-left: 245px;
+}
+
+.navigation a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.instrument-1 {
+  margin-right: 34px;
+  color: #1abc9c;
+}
+.instrument-2 {
+  margin-right: 38px;
+  color: #0f0101;
+}
+.instrument-3 {
+  margin-right: 30px;
+  color: #0f0101;
+}
+.instrument-4 {
+  margin-right: 28px;
+  color: #0f0101;
+}
+.instrument-5 {
+  margin-right: 34px;
+  color: #0f0101;
+}
+.instrument-6 {
+  color: #0f0101;
+}
+.navigation li {
+  float: left;
+}
+.image-slider {
+  position: relative;
+}
+.slider-foto {
+  height: 600px;
+}
+
+.slider-but {
+  position: absolute;
+  border: none;
+  background-color: rgb(78, 198, 171);
+  opacity: 0.651;
+  width: 104px;
+  height: 104px;
+}
+.slider-left {
+  left: 125px;
+  top: 228px;
+}
+.slider-right {
+  right: 125px;
+  top: 228px;
+}
+.text-infoto {
+  position: absolute;
+  left: 0;
+  top: 220px;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1110px;
+  text-align: center;
+}
+.text-1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 46px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.text-2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  padding-top: 36px;
+}
+.case {
+  width: 255px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 98px;
+  padding: 0;
+}
+.case-1 {
+  margin: 0;
+  padding: 0;
+}
+.case:hover .image-col {
+  opacity: 0.549;
+}
+.case:hover .wrapper-image {
+  filter: grayscale(0);
+  background-color: #1abc9c;
+}
+.case:hover .info {
+  filter: grayscale(0);
+  background-color: #1abc9c;
+}
+.case:hover .info-m {
+  filter: grayscale(0);
+  background-color: #7fd9c7;
+}
+.wrapper-image {
+  background-color: #e9f0fd;
+  position: relative;
+}
+.image-col {
+  position: absolute;
+  width: 235px;
+  height: 262px;
+  border-width: 10px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+  margin: 0;
+  z-index: 1;
+}
+.image-col-1,
+.image-col-2,
+.image-col-3,
+.image-col-4 {
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 78px;
+  padding-right: 6px;
+}
+.image-col-1 {
+  padding-left: 34px;
+}
+.image-col-4 {
+  padding-top: 6px;
+  padding-left: 36px;
+}
+.mimage-mar {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.info,
+.info-m {
+  display: inline-block;
+}
+
+.info {
+  box-sizing: border-box;
+  width: 200px;
+  height: 38px;
+  background-color: #323232;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  line-height: 38px;
+  vertical-align: middle;
+  padding-left: 14px;
+  margin: 0;
+}
+.info-m {
+  width: 55px;
+  height: 38px;
+  background-color: #8c8c8c;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  float: right;
+  margin: 0;
+  line-height: 38px;
+  vertical-align: middle;
+}
+.section-title {
+  background: #e9f0fd;
+  width: 100%;
+}
+.news {
+  color: #605e5e;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 104px;
+  padding-bottom: 32px;
+  margin: 0;
+}
+.line-2 {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.line-3 {
+  margin-top: 14px;
+  margin-bottom: 32px;
+}
+.text {
+  color: #555252;
+  font-size: 18px;
+  padding: 18px 0 50px 0;
+  margin: 0;
+}
+footer {
+  background-color: #323232;
+}
+.footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 88px;
+  text-align: center;
+}
+.text-item {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+.text-f {
+  display: inline-block;
+  color: #fefefe;
+  font-size: 16px;
+}
+.text-f-1 {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #46bfa9;
+}
