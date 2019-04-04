@@ -22,7 +22,6 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 245px;
 }
 .page-nav {
   padding: 38px 0;
@@ -30,41 +29,40 @@ img {
   margin: 0 auto;
 }
 .name {
+  display: block;
   color: #605e5e;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 30px;
   float: left;
-  margin-left: 245px;
+}
+
+.navigation a:hover {
+  color: #1abc9c;
 }
 
 .navigation a {
+  display: block;
+  color: #000;
   text-transform: uppercase;
   text-decoration: none;
 }
 .instrument-1 {
   margin-right: 34px;
-  color: #1abc9c;
 }
 .instrument-2 {
   margin-right: 38px;
-  color: #0f0101;
 }
 .instrument-3 {
   margin-right: 30px;
-  color: #0f0101;
 }
 .instrument-4 {
   margin-right: 28px;
-  color: #0f0101;
 }
 .instrument-5 {
   margin-right: 34px;
-  color: #0f0101;
 }
-.instrument-6 {
-  color: #0f0101;
-}
+
 .navigation li {
   float: left;
 }
@@ -77,17 +75,23 @@ img {
 
 .slider-but {
   position: absolute;
+  cursor: pointer;
   border: none;
   background-color: rgb(78, 198, 171);
-  opacity: 0.651;
   width: 104px;
   height: 104px;
 }
+
+.slider-but:hover {
+  opacity: 1;
+}
 .slider-left {
+  background-image: url(/img/left.png);
   left: 125px;
   top: 228px;
 }
 .slider-right {
+  background-image: url(/img/right.png);
   right: 125px;
   top: 228px;
 }
@@ -106,7 +110,6 @@ img {
   line-height: 46px;
   color: #fff;
   padding: 0;
-  margin: 0;
 }
 .text-2 {
   text-transform: uppercase;
@@ -114,7 +117,6 @@ img {
   color: #ffffff;
   margin: 0;
   padding: 0;
-  padding-top: 36px;
 }
 .case {
   width: 255px;
