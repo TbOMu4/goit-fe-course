@@ -4,135 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Homework-05</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/Normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="page-name wrapper">
-      <nav class="page-nav clearfix">
-        <a class="name " href="#">
-          <img src="./img/mart.png" alt="" />
+    <header class="container">
+      <nav class="header">
+        <a href="#">
+          <img class="header__mart" src="img/mart.png" alt="" />
         </a>
-        <ul class="navigation clearfix">
-          <li><a class="instrument-1" href="">home</a></li>
-          <li><a class="instrument-2" href="">about us</a></li>
-          <li><a class="instrument-3" href="">shop</a></li>
-          <li><a class="instrument-4" href="">page</a></li>
-          <li><a class="instrument-5" href="">blog</a></li>
-          <li><a class="instrument-6" href="">contact us</a></li>
+        <ul class="header__nav">
+          <li><a class="header__nav--item--1" href="">home</a></li>
+          <li><a class="header__nav--item--2" href="">about us</a></li>
+          <li><a class="header__nav--item--3" href="">shop</a></li>
+          <li><a class="header__nav--item--4" href="">page</a></li>
+          <li><a class="header__nav--item--5" href="">blog</a></li>
+          <li><a class="header__nav--item--6" href="">contact us</a></li>
         </ul>
       </nav>
     </header>
-    <main class="wrapper">
-      <section class="product">
-        <div class="slider">
-          <div class="image-slider">
-            <img class="slider-foto" src="img/noname.png" alt="" />
-            <button >
-              <div class="button slider-but slider-left"></div>
-            </button>
 
-            <button class="button slider-but slider-right"></button>
-            <div class="text-infoto">
-              <p class="text-1 text-infoto-1">affordable paris tours</p>
-              <p class="text-2 text-infoto-2">
-                city tours/tour tickets/tour guides
-              </p>
-            </div>
-          </div>
-        </div>
+    <main class="main">
+      <figure>
+        <img class="slider__image" src="img/slide4.png" alt="" height="100%" />
+      </figure>
+      <section class="container">
+        <article>
+          <h1 class="slide__text--h1">AFFORDABLE PARIS</h1>
+          <h2 class="slide__text--h2">
+            CITY TOURS / TOUR TICKETS / TOUR GUIDES
+          </h2>
+          <button class="button button__left button__left--image"></button>
+          <button class="button  button__right button__right--image"></button>
+        </article>
       </section>
-      <section class="section-title ">
-        <h2 class="news">new collection</h2>
-        <div>
-          <img class="line-2" src="./img/line.png" alt="" />
-        </div>
-        <section class="mimage-mar clearfix">
-          <article class="case case-2 clearfix">
-            <div class="image-col">
-              <img class="image-col-1" src="./img/icon-1.png" alt="" />
-              <img class="image-col-2" src="./img/icon-2.png" alt="" />
-              <img class="image-col-3" src="./img/icon-3.png" alt="" />
-              <img class="image-col-4" src="./img/icon-4.png" alt="" />
-            </div>
-            <img
-              class="wrapper-image"
-              src="./img/ncname-1.png"
-              alt=""
-              width="255"
-              height="282"
-            />
-            <p class="info ">blue tshirt</p>
-            <p class="info-m clearfix">$26</p>
-          </article>
-          <article class="case  clearfix">
-            <div class="image-col">
-              <img class="image-col-1" src="./img/icon-1.png" alt="" />
-              <img class="image-col-2" src="./img/icon-2.png" alt="" />
-              <img class="image-col-3" src="./img/icon-3.png" alt="" />
-              <img class="image-col-4" src="./img/icon-4.png" alt="" />
-            </div>
-            <img
-              class="wrapper-image"
-              src="./img/ncname-2.png"
-              alt=""
-              width="255"
-              height="282"
-            />
-            <p class="info">woman shirt</p>
-            <p class="info-m clearfix">$31</p>
-          </article>
-          <article class="case clearfix">
-            <div class="image-col">
-              <img class="image-col-1" src="./img/icon-1.png" alt="" />
-              <img class="image-col-2" src="./img/icon-2.png" alt="" />
-              <img class="image-col-3" src="./img/icon-3.png" alt="" />
-              <img class="image-col-4" src="./img/icon-4.png" alt="" />
-            </div>
-            <img
-              class="wrapper-image"
-              src="./img/ncname-3.png"
-              alt=""
-              width="255"
-              height="282"
-            />
-            <p class="info">yellow tshirt</p>
-            <p class="info-m clearfix">$21</p>
-          </article>
-          <article class="case case-1 clearfix">
-            <div class="image-col">
-              <img class="image-col-1" src="./img/icon-1.png" alt="" />
-              <img class="image-col-2" src="./img/icon-2.png" alt="" />
-              <img class="image-col-3" src="./img/icon-3.png" alt="" />
-              <img class="image-col-4" src="./img/icon-4.png" alt="" />
-            </div>
-            <img
-              class="wrapper-image"
-              src="./img/ncname-4.png"
-              alt=""
-              width="255"
-              height="282"
-            />
-            <p class="info">cool lingerie</p>
-            <p class="info-m clearfix">$56</p>
-          </article>
-        </section>
+
+      <section class="section__title">
+          <h2 class="section__title-text">NEW COLLECTION</h2>
+          <ul class="content">
+              <li>
+                  <img src="img/1.png" alt="">
+              </li>
+              <li><button class="like"></button></li>
+              <li><button class="bla"></button></li>
+              <li><button class="time"></button></li>
+              <li><button class="card"></button></li>
+              <p class="content__text--1">Blue Tshirt</p>
+              <p class="content__text--2">$26</p>
+          </ul>
       </section>
-      <footer>
-        <div class="footer">
-          <div class="text-item">
-            <span class=" text-f"
-              >All Rights Reserved © Dokan | Designed
-              <span class="text-f-1">ThemenGraph</span>
-            </span>
-          </div>
-        </div>
-      </footer>
     </main>
   </body>
 </html>
