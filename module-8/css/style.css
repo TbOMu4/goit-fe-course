@@ -189,9 +189,9 @@ img {
 
 .header-button-2 {
   display: block;
-  position: absolute;
   width: 280px;
   height: 40px;
+  margin: 0 auto;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -205,6 +205,5 @@ img {
   font-size: 14px;
   font-weight: bold;
   color: #ff4e50;
-  right: 20px;
   margin-bottom: 58px;
 }
