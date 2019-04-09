@@ -167,42 +167,30 @@ h1:nth-last-of-type() {
 }
 
 .content {
-    position: relative;
+  display: flex;
+  width: 255px;
+  height: 322px;
+  margin: 0;
 }
 
 .content__text--1 {
-  font-family: Roboto;
+  display: flex
+  font-family: "Roboto";
   font-size: 18px;
   text-transform: uppercase;
   color: #fff;
-  width: 255px;
+  width: 205px;
   height: 40px;
   background-color: #323232;
 }
 
 .content__text--2 {
-  font-family: Roboto;
+  display: flex;
+  font-family: "Roboto";
   font-size: 18px;
   text-transform: uppercase;
   color: #fff;
-  width: 54px;
+  width: 50px;
   height: 40px;
   background-color: #8c8c8c;
-}
-
-.like {
-  background-image: url(/img/like.png);
-}
-
-.bla {
-  background-image: url(/img/bla.png);
-}
-
-.time {
-  background-image: url(/img/time.png);
-}
-
-.card {
-  background-image: url(/img/12png);
-  background-image: url(/img/add\ to\ cart.png);
 }
