@@ -28,71 +28,44 @@ img {
   height: auto;
 }
 
-header {
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/1.png);
-  background: no-repeat;
+.background {
+  background-image: url(/img/1.png);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  margin-bottom: 69px;
 }
 
-.header {
-  position: relative;
+.header__login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 151px;
+  margin: 0 auto;
+  padding-top: 32px;
+  margin-bottom: 125px;
 }
 
-.header-login li:hover {
-  width: 90px;
-  height: 36px;
-  -webkit-border-radius: 18px;
-  -moz-border-radius: 18px;
-  border-radius: 18px;
-  background-color: rgba(26, 25, 21, 0);
-  border: solid 2px #fff;
+.header__log {
+  width: 41px;
+  height: 14px;
+}
+
+.header__sing {
+  width: 53px;
+  height: 14px;
 }
 
 .text-uppercase {
+  cursor: pointer;
   text-decoration: none;
-  background: none;
-  border: none;
   font-family: "Montserrat";
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   color: #fff;
   list-style: none;
-  font-weight: 400;
-}
-
-.header-login-log {
-  display: block;
-  position: absolute;
-  cursor: pointer;
-  top: 32px;
-  left: 82px;
-  cursor: pointer;
-  font-weight: 400;
-}
-
-.header-login-sing {
-  display: block;
-  position: absolute;
-  top: 32px;
-  right: 103px;
-  cursor: pointer;
-}
-
-.text-uppercase {
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
   font-weight: 700;
 }
 
 .header-text-1 {
-  position: absolute;
-  top: 172px;
   text-align: center;
   right: 70px;
   font-family: "Montserrat";
@@ -101,38 +74,40 @@ header {
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
+  letter-spacing: 1px;
+  padding-bottom: 38px;
 }
 
 .header-text-2 {
-  position: absolute;
   text-align: center;
-  top: 230px;
   font-family: "Montserrat";
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 300;
+  font-weight: 700;
+  padding-bottom: 19px;
 }
 
 .header-text-p {
-  position: absolute;
+  width: 239px;
   text-align: center;
-  top: 305px;
-  right: 50px;
-  left: 50px;
   font-family: "Roboto";
   font-size: 18px;
   color: #fff;
+  font-weight: 300;
+  margin: 0 auto;
+  padding-bottom: 19px;
+}
+
+.header-button-1 {
+  padding-bottom: 132px;
 }
 
 .header-button {
   display: block;
   width: 280px;
   height: 40px;
-  position: absolute;
-  bottom: 138px;
-  right: 19px;
   list-style: none;
   text-decoration: none;
   text-align: center;
@@ -145,6 +120,9 @@ header {
   font-size: 14px;
   font-weight: bold;
   color: #fff;
+  font-weight: 700;
+  margin-left: 18px;
+  
 }
 
 .text-3 {
