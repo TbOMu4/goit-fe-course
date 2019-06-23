@@ -55,12 +55,10 @@ const notepad = {
      * Принимает: идентификатор заметки и объект, полями которого надо обновить заметку
      * Возвращает: обновленную заметку
      */
-
-    if (notepad.notes.id === id) {
+    const note = this.findNoteById(id);
       Object.assign(note, updatedContent);
       return this.notes;
-    }
-    return this.findNoteById(id);
+    
   },
   updateNotePriority(id, priority) {
     /*
