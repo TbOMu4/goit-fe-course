@@ -44,7 +44,7 @@ const notepad = {
      * Возвращает: ничего
      */
     const note = this.findNoteById(id);
-    if (note.id === id) this.notes.splice(note, 1);
+    this.notes.splice(note, 1);
   },
   updateNoteContent(id, updatedContent) {
     /*
@@ -55,12 +55,12 @@ const notepad = {
      * Принимает: идентификатор заметки и объект, полями которого надо обновить заметку
      * Возвращает: обновленную заметку
      */
-    for (let note of this.notes) {
-      if (notepad.notes.id === id) {
-        Object.assign(note, updatedContent);
-        return this.notes;
-      }
+
+    if (notepad.notes.id === id) {
+      Object.assign(note, updatedContent);
+      return this.notes;
     }
+    return this.findNoteById;
   },
   updateNotePriority(id, priority) {
     /*
@@ -101,8 +101,8 @@ const notepad = {
      * Возвращает: новый массив заметок с подходящим приоритетом
      */
     const newNotes = [];
-    for (let i of this.notes) {
-      if (i.priority === priority) newNotes.push(i);
+    for (let priori of this.notes) {
+      if (priori.priority === priority) newNotes.push(priori);
     }
     return newNotes;
   }
