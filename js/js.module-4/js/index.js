@@ -60,7 +60,7 @@ const notepad = {
       Object.assign(note, updatedContent);
       return this.notes;
     }
-    return this.findNoteById;
+    return this.findNoteById(id);
   },
   updateNotePriority(id, priority) {
     /*
