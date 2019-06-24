@@ -43,8 +43,7 @@ const notepad = {
      * Принимает: идентификатор заметки
      * Возвращает: ничего
      */
-    const note = this.findNoteById(id);
-    this.notes.splice(note, 1);
+    this.notes.splice(this.findNoteById(id), 1);
   },
   updateNoteContent(id, updatedContent) {
     /*
@@ -56,9 +55,8 @@ const notepad = {
      * Возвращает: обновленную заметку
      */
     const note = this.findNoteById(id);
-      Object.assign(note, updatedContent);
-      return this.notes;
-    
+    Object.assign(note, updatedContent);
+    return this.notes;
   },
   updateNotePriority(id, priority) {
     /*

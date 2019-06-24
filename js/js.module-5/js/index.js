@@ -3,34 +3,33 @@
 // Конструктор Notepad при инициализации принимает массив заметок
 const Notepad = function Notepad(notes = []) {
   // Перенеси свойства и методы объекта notepad в конструктор
-  (this.getNotes = function() {
+  this.getNotes = function() {
     return notes;
-  }),
-    (this.findNoteById = function(id) {
+  };
+    this.findNoteById = function(id) {
       for (let note of notes) {
         if (note.id === id) return note;
       }
-    }),
-    (this.saveNote = function(note) {
+    };
+    this.saveNote = function(note) {
       notes.push(note);
       return note;
-    }),
-    (this.deleteNote = function(id) {
-      const note = this.findNoteById(id);
-      notes.splice(note, 1);
-    }),
-    (this.updateNoteContent = function(id, updatedContent) {
+    };
+    this.deleteNote = function(id) {
+      notes.splice(this.findNoteById(id), 1);
+    };
+    this.updateNoteContent = function(id, updatedContent) {
       const note = this.findNoteById(id);
         Object.assign(note, updatedContent);
         return this.notes;
       
-    }),
-    (this.updateNotePriority = function(id, priority) {
+    };
+    this.updateNotePriority = function(id, priority) {
       const note = this.findNoteById(id);
       note.priority = priority;
       return note;
-    }),
-    (this.filterNotesByQuery = function(query) {
+    };
+    this.filterNotesByQuery = function(query) {
       const newNotes = [];
       for (let note of notes) {
         if (
@@ -40,14 +39,14 @@ const Notepad = function Notepad(notes = []) {
           newNotes.push(note);
       }
       return newNotes;
-    }),
-    (this.filterNotesByPriority = function(priority) {
+    };
+    this.filterNotesByPriority = function(priority) {
       const newNotes = [];
       for (let priori of notes) {
         if (priori.priority === priority) newNotes.push(priori);
       }
       return newNotes;
-    });
+    };
 };
 
 // Добавляем статическое свойство, в котором храним приоритеты.
