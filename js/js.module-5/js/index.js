@@ -6,47 +6,47 @@ const Notepad = function Notepad(notes = []) {
   this.getNotes = function() {
     return notes;
   };
-    this.findNoteById = function(id) {
-      for (let note of notes) {
-        if (note.id === id) return note;
-      }
-    };
-    this.saveNote = function(note) {
-      notes.push(note);
-      return note;
-    };
-    this.deleteNote = function(id) {
-      notes.splice(this.findNoteById(id), 1);
-    };
-    this.updateNoteContent = function(id, updatedContent) {
-      const note = this.findNoteById(id);
-        Object.assign(note, updatedContent);
-        return this.notes;
-      
-    };
-    this.updateNotePriority = function(id, priority) {
-      const note = this.findNoteById(id);
-      note.priority = priority;
-      return note;
-    };
-    this.filterNotesByQuery = function(query) {
-      const newNotes = [];
-      for (let note of notes) {
-        if (
-          note.title.toLowerCase().includes(query.toLowerCase()) ||
-          note.body.toLowerCase().includes(query.toLowerCase())
-        )
-          newNotes.push(note);
-      }
-      return newNotes;
-    };
-    this.filterNotesByPriority = function(priority) {
-      const newNotes = [];
-      for (let priori of notes) {
-        if (priori.priority === priority) newNotes.push(priori);
-      }
-      return newNotes;
-    };
+  this.findNoteById = function(id) {
+    for (let note of notes) {
+      if (note.id === id) return note;
+    }
+  };
+  this.saveNote = function(note) {
+    notes.push(note);
+    return note;
+  };
+  this.deleteNote = function(id) {
+    const note = this.findNoteById(id);
+    notes.splice(notes.indexOf(note), 1);
+  };
+  this.updateNoteContent = function(id, updatedContent) {
+    const note = this.findNoteById(id);
+    Object.assign(note, updatedContent);
+    return this.notes;
+  };
+  this.updateNotePriority = function(id, priority) {
+    const note = this.findNoteById(id);
+    note.priority = priority;
+    return note;
+  };
+  this.filterNotesByQuery = function(query) {
+    const newNotes = [];
+    for (let note of notes) {
+      if (
+        note.title.toLowerCase().includes(query.toLowerCase()) ||
+        note.body.toLowerCase().includes(query.toLowerCase())
+      )
+        newNotes.push(note);
+    }
+    return newNotes;
+  };
+  this.filterNotesByPriority = function(priority) {
+    const newNotes = [];
+    for (let priori of notes) {
+      if (priori.priority === priority) newNotes.push(priori);
+    }
+    return newNotes;
+  };
 };
 
 // Добавляем статическое свойство, в котором храним приоритеты.

@@ -43,7 +43,8 @@ const notepad = {
      * Принимает: идентификатор заметки
      * Возвращает: ничего
      */
-    this.notes.splice(this.findNoteById(id), 1);
+    const note = this.findNoteById(id);
+    this.notes.splice(this.notes.indexOf(note), 1);
   },
   updateNoteContent(id, updatedContent) {
     /*
